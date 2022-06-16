@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myWK: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let calculatorURL = URL(string: "https://carbon-calculator.climatehero.me/?source=GoogleKeywords&gclid=CjwKCAjwqauVBhBGEiwAXOepkYQZ91WoW-f-6ytNanqB7TBaCZBM9Q0h7SkWVKt-v6ge8FGuwev9YhoCbzQQAvD_BwE")
+        myWK.load(URLRequest(url: calculatorURL!))
     }
 
 
