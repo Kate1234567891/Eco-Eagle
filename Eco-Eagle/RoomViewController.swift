@@ -10,8 +10,7 @@ import UIKit
 
 class RoomViewController: UIViewController {
     
-    var groupId: Int?
-    var passGroupId: Int?
+    var groupId: Int? = nil
     @IBOutlet weak var BottleButton: UIButton!
     @IBOutlet weak var PlantButton: UIButton!
     @IBOutlet weak var ClothesButton: UIButton!
@@ -20,7 +19,7 @@ class RoomViewController: UIViewController {
     
     @IBAction func BottleButton(_ sender: Any) {
         groupId = 10
-    }
+        }
     @IBAction func PlantButton(_ sender: Any) {
         groupId = 11
     }
@@ -34,12 +33,6 @@ class RoomViewController: UIViewController {
         groupId = 13
     }
     
-    private func goButton() {
-        let myVC = storyboard?.instantiateViewControllerWithIdentifier("PopUps") as! PopUpsViewController
-        myVC.intPassed = groupId
-        navigationController?.pushViewController(myVC, animated: true)
-    }
-   
     /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
@@ -53,14 +46,16 @@ class RoomViewController: UIViewController {
     }
     */
     
+    // This function is called before the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get a reference to the second view controller
+        let secondViewController = segue.destination as! PopUpsViewController
+        // Set a variable in the second view controller with the String to pass
+        secondViewController.passedGroupId = groupId
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        passGroupId = groupId
     }
-    
-    
-    
-    
-    
     
 }
