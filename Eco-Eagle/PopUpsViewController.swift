@@ -10,7 +10,7 @@ import UIKit
 
 class PopUpsViewController: UIViewController {
     
-    var groupId: Int!
+    var passedGroupId: Int!
     @IBOutlet weak var popUpImageView: UIImageView!
     
     let images: [UIImage?] = [
@@ -21,11 +21,8 @@ class PopUpsViewController: UIViewController {
         UIImage(named: "Group 13")
     ]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let vc = RoomViewController()
-        print(vc.groupId)
-        popUpImageView.image = images[(vc.groupId ?? 9)-9]
+        popUpImageView?.image = images[passedGroupId-9]
     }
 }
