@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5AB6303285C8F090034D45C /* PopUpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6302285C8F090034D45C /* PopUpsViewController.swift */; };
+		A5E28C42285C898200E54D00 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E28C41285C898200E54D00 /* RoomViewController.swift */; };
 		C6EC377E285904DF00A83E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC377D285904DF00A83E04 /* AppDelegate.swift */; };
 		C6EC3780285904DF00A83E04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC377F285904DF00A83E04 /* SceneDelegate.swift */; };
 		C6EC3782285904DF00A83E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EC3781285904DF00A83E04 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5AB6302285C8F090034D45C /* PopUpsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpsViewController.swift; sourceTree = "<group>"; };
+		A5E28C41285C898200E54D00 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		C6EC377A285904DF00A83E04 /* Eco-Eagle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eco-Eagle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EC377D285904DF00A83E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6EC377F285904DF00A83E04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				C6EC377F285904DF00A83E04 /* SceneDelegate.swift */,
 				C6EC3781285904DF00A83E04 /* ViewController.swift */,
 				C6EC3783285904DF00A83E04 /* Main.storyboard */,
+				A5AB6302285C8F090034D45C /* PopUpsViewController.swift */,
+				A5E28C41285C898200E54D00 /* RoomViewController.swift */,
 				C6EC3789285904E000A83E04 /* Assets.xcassets */,
 				C6EC378B285904E000A83E04 /* LaunchScreen.storyboard */,
 				C6EC378E285904E000A83E04 /* Info.plist */,
@@ -144,6 +150,8 @@
 				C6EC3782285904DF00A83E04 /* ViewController.swift in Sources */,
 				C6EC377E285904DF00A83E04 /* AppDelegate.swift in Sources */,
 				C6EC3788285904DF00A83E04 /* Eco_Eagle.xcdatamodeld in Sources */,
+				A5AB6303285C8F090034D45C /* PopUpsViewController.swift in Sources */,
+				A5E28C42285C898200E54D00 /* RoomViewController.swift in Sources */,
 				C6EC3780285904DF00A83E04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

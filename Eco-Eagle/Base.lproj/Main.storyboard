@@ -214,16 +214,16 @@
             </objects>
             <point key="canvasLocation" x="1307.2463768115942" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Room View Controller-->
         <scene sceneID="UvX-J6-KsJ">
             <objects>
-                <viewController modalPresentationStyle="overFullScreen" id="peN-up-9zy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Room" modalPresentationStyle="overFullScreen" id="peN-up-9zy" customClass="RoomViewController" customModule="Eco_Eagle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYZ-oC-Gzh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="RoomScavengerHunt" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILc-3w-mcp">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="427" height="896"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="372" id="M9R-4y-ifb"/>
                                     <constraint firstAttribute="width" constant="372" id="QhY-W4-rDp"/>
@@ -243,6 +243,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="Lights"/>
                                 <connections>
                                     <action selector="LightButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="bLs-kv-3TA"/>
+                                    <action selector="LightButton:" destination="peN-up-9zy" eventType="touchUpInside" id="bba-DI-0DW"/>
                                     <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="rzK-SB-a2Z" id="XUE-hb-fXY">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -258,6 +259,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="PileOfClothes"/>
                                 <connections>
                                     <action selector="ClothesButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="d7A-cI-4BT"/>
+                                    <action selector="ClothesButton:" destination="peN-up-9zy" eventType="touchUpInside" id="vEj-Ij-Wz6"/>
                                     <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="iCZ-IL-pp1" id="ie4-vD-A8E">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -272,6 +274,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Plant"/>
                                 <connections>
+                                    <action selector="PlantButton:" destination="peN-up-9zy" eventType="touchUpInside" id="faI-t3-isg"/>
                                     <action selector="PlantButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="gmm-bI-G8k"/>
                                     <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="MEg-qO-SYz" id="Ema-bq-j04">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -288,6 +291,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="MattressEdited-2"/>
                                 <connections>
                                     <action selector="MattressButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="7r5-qH-0Td"/>
+                                    <action selector="MattressButton:" destination="peN-up-9zy" eventType="touchUpInside" id="Heh-RG-how"/>
                                     <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="Zur-vZ-Gs4" id="Kb3-pm-EO4">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -312,7 +316,8 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="BottleButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="ypV-MO-jhu"/>
+                                    <action selector="BottleButton:" destination="peN-up-9zy" eventType="touchUpInside" id="djO-G3-f4J"/>
+                                    <action selector="BottleButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="zmZ-cX-UWY"/>
                                     <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="KY1-gi-0C0" id="dCa-3T-Ddf">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -377,16 +382,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Bt-dH-h2Q"/>
+                    <connections>
+                        <outlet property="BottleButton" destination="KY1-gi-0C0" id="oG8-oQ-th0"/>
+                        <outlet property="ClothesButton" destination="iCZ-IL-pp1" id="nYu-T8-9L7"/>
+                        <outlet property="LightButton" destination="rzK-SB-a2Z" id="3Zc-NM-pSQ"/>
+                        <outlet property="MattressButton" destination="Zur-vZ-Gs4" id="jdc-VY-RJJ"/>
+                        <outlet property="PlantButton" destination="MEg-qO-SYz" id="7ZY-gc-YJ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EN-nf-ATr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="o6r-FE-P1J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1992.753623188406" y="69.642857142857139"/>
         </scene>
-        <!--Pop Up View Controller-->
+        <!--Pop Ups View Controller-->
         <scene sceneID="cyk-zs-83Q">
             <objects>
-                <viewController storyboardIdentifier="PopUp" id="78C-PB-EUv" customClass="PopUpViewController" customModule="Eco_Eagle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopUps" id="78C-PB-EUv" customClass="PopUpsViewController" customModule="Eco_Eagle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lvs-fL-nXT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,17 +410,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="8Z7-Xe-9Oa">
-                                            <rect key="frame" x="47" y="129" width="320" height="128"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="320" id="kEx-QI-Rrv"/>
-                                            </constraints>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="KaJ-Ob-edm">
+                                            <rect key="frame" x="20" y="20" width="374" height="795"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="8Z7-Xe-9Oa" firstAttribute="leading" secondItem="3JW-t7-N9O" secondAttribute="leading" constant="25" id="1px-Jr-NbE"/>
-                                        <constraint firstItem="8Z7-Xe-9Oa" firstAttribute="centerX" secondItem="3JW-t7-N9O" secondAttribute="centerX" id="eHK-8C-Lf1"/>
-                                        <constraint firstAttribute="trailing" secondItem="8Z7-Xe-9Oa" secondAttribute="trailing" constant="25" id="q6Q-ga-317"/>
+                                        <constraint firstItem="KaJ-Ob-edm" firstAttribute="centerY" secondItem="3JW-t7-N9O" secondAttribute="centerY" id="FaP-Sn-rdr"/>
+                                        <constraint firstItem="KaJ-Ob-edm" firstAttribute="centerX" secondItem="3JW-t7-N9O" secondAttribute="centerX" id="XLo-Bg-28e"/>
+                                        <constraint firstAttribute="bottom" secondItem="KaJ-Ob-edm" secondAttribute="bottom" constant="20" id="ZTz-Mi-Xfq"/>
+                                        <constraint firstAttribute="trailing" secondItem="KaJ-Ob-edm" secondAttribute="trailing" constant="20" id="aPX-SQ-c3A"/>
+                                        <constraint firstItem="KaJ-Ob-edm" firstAttribute="top" secondItem="3JW-t7-N9O" secondAttribute="top" constant="20" id="eL6-9j-PoT"/>
+                                        <constraint firstItem="KaJ-Ob-edm" firstAttribute="leading" secondItem="3JW-t7-N9O" secondAttribute="leading" constant="20" id="ySF-IR-iCI"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="regular"/>
@@ -417,6 +429,9 @@
                         <viewLayoutGuide key="safeArea" id="ZkS-hV-4Yn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="popUpImageView" destination="KaJ-Ob-edm" id="22L-AM-OHt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MeA-Tj-Hl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
