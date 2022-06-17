@@ -241,6 +241,12 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Lights"/>
+                                <connections>
+                                    <action selector="LightButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="bLs-kv-3TA"/>
+                                    <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="rzK-SB-a2Z" id="XUE-hb-fXY">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCZ-IL-pp1">
                                 <rect key="frame" x="67" y="30" width="89" height="111"/>
@@ -250,6 +256,12 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="PileOfClothes"/>
+                                <connections>
+                                    <action selector="ClothesButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="d7A-cI-4BT"/>
+                                    <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="iCZ-IL-pp1" id="ie4-vD-A8E">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-qO-SYz">
                                 <rect key="frame" x="152" y="127" width="116" height="105"/>
@@ -259,6 +271,12 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Plant"/>
+                                <connections>
+                                    <action selector="PlantButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="gmm-bI-G8k"/>
+                                    <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="MEg-qO-SYz" id="Ema-bq-j04">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zur-vZ-Gs4">
                                 <rect key="frame" x="22" y="216" width="135" height="474"/>
@@ -268,6 +286,12 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="MattressEdited-2"/>
+                                <connections>
+                                    <action selector="MattressButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="7r5-qH-0Td"/>
+                                    <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="Zur-vZ-Gs4" id="Kb3-pm-EO4">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY1-gi-0C0">
                                 <rect key="frame" x="147" y="55" width="87.5" height="75"/>
@@ -287,6 +311,12 @@
                                 <buttonConfiguration key="configuration" style="plain" image="PlasticWaterBottleEdited">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="BottleButton:" destination="o6r-FE-P1J" eventType="touchUpInside" id="ypV-MO-jhu"/>
+                                    <segue destination="78C-PB-EUv" kind="popoverPresentation" popoverAnchorView="KY1-gi-0C0" id="dCa-3T-Ddf">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bf8-A9-F9Y"/>
@@ -302,6 +332,7 @@
                             <constraint firstItem="Zur-vZ-Gs4" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="25" id="8KA-Os-MRY"/>
                             <constraint firstItem="MEg-qO-SYz" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="152" id="8NH-Xf-yjW"/>
                             <constraint firstItem="Zur-vZ-Gs4" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="28" id="DKE-o1-iox"/>
+                            <constraint firstAttribute="trailing" secondItem="ILc-3w-mcp" secondAttribute="trailing" id="EOX-Ib-tMm"/>
                             <constraint firstItem="rzK-SB-a2Z" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="225" id="Ees-rq-vlB"/>
                             <constraint firstItem="MEg-qO-SYz" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="152" id="Fcm-15-XxM"/>
                             <constraint firstItem="Zur-vZ-Gs4" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="25" id="Kgk-gN-pBJ"/>
@@ -322,13 +353,16 @@
                             <constraint firstItem="rzK-SB-a2Z" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="225" id="Um8-va-lSa"/>
                             <constraint firstItem="rzK-SB-a2Z" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="226" id="ZgH-x6-0I7"/>
                             <constraint firstItem="KY1-gi-0C0" firstAttribute="top" secondItem="KYZ-oC-Gzh" secondAttribute="top" constant="24" id="aYw-PD-1Cj"/>
+                            <constraint firstItem="ILc-3w-mcp" firstAttribute="top" secondItem="KYZ-oC-Gzh" secondAttribute="top" id="bbC-hJ-fuq"/>
                             <constraint firstItem="ILc-3w-mcp" firstAttribute="top" secondItem="bf8-A9-F9Y" secondAttribute="top" id="cbW-6G-LR9"/>
                             <constraint firstItem="iCZ-IL-pp1" firstAttribute="top" secondItem="KYZ-oC-Gzh" secondAttribute="top" constant="30" id="cxG-oH-Ich"/>
                             <constraint firstItem="bf8-A9-F9Y" firstAttribute="trailing" secondItem="KY1-gi-0C0" secondAttribute="trailing" constant="132" id="jiw-rt-A8i"/>
+                            <constraint firstItem="ILc-3w-mcp" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" id="kFW-lm-Al5"/>
                             <constraint firstItem="bf8-A9-F9Y" firstAttribute="bottom" secondItem="Zur-vZ-Gs4" secondAttribute="bottom" constant="166" id="lvs-cZ-cgP"/>
                             <constraint firstItem="MEg-qO-SYz" firstAttribute="top" secondItem="bf8-A9-F9Y" secondAttribute="top" constant="83" id="n4I-Go-Q1R"/>
                             <constraint firstItem="bf8-A9-F9Y" firstAttribute="bottom" secondItem="ILc-3w-mcp" secondAttribute="bottom" id="n8J-qX-KEi"/>
                             <constraint firstItem="rzK-SB-a2Z" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="229" id="nO4-Pq-YNH"/>
+                            <constraint firstAttribute="bottom" secondItem="ILc-3w-mcp" secondAttribute="bottom" id="pcB-rb-07d"/>
                             <constraint firstItem="Zur-vZ-Gs4" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="23" id="ppH-0J-fOv"/>
                             <constraint firstItem="KY1-gi-0C0" firstAttribute="leading" secondItem="bf8-A9-F9Y" secondAttribute="leading" constant="147" id="rMT-X7-c3a"/>
                             <constraint firstItem="bf8-A9-F9Y" firstAttribute="trailing" secondItem="iCZ-IL-pp1" secondAttribute="trailing" constant="210.5" id="rb2-DL-h7Y"/>
@@ -345,8 +379,48 @@
                     <navigationItem key="navigationItem" id="6Bt-dH-h2Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EN-nf-ATr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="o6r-FE-P1J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1992.753623188406" y="69.642857142857139"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="cyk-zs-83Q">
+            <objects>
+                <viewController storyboardIdentifier="PopUp" id="78C-PB-EUv" customClass="PopUpViewController" customModule="Eco_Eagle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lvs-fL-nXT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNI-eB-hyS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3JW-t7-N9O">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="8Z7-Xe-9Oa">
+                                            <rect key="frame" x="47" y="129" width="320" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="320" id="kEx-QI-Rrv"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8Z7-Xe-9Oa" firstAttribute="leading" secondItem="3JW-t7-N9O" secondAttribute="leading" constant="25" id="1px-Jr-NbE"/>
+                                        <constraint firstItem="8Z7-Xe-9Oa" firstAttribute="centerX" secondItem="3JW-t7-N9O" secondAttribute="centerX" id="eHK-8C-Lf1"/>
+                                        <constraint firstAttribute="trailing" secondItem="8Z7-Xe-9Oa" secondAttribute="trailing" constant="25" id="q6Q-ga-317"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZkS-hV-4Yn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MeA-Tj-Hl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730.434782608696" y="69.642857142857139"/>
         </scene>
         <!--carbon footprint-->
         <scene sceneID="Jk8-0C-lPt">
@@ -378,8 +452,12 @@
             <point key="canvasLocation" x="1622" y="820"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dCa-3T-Ddf"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="EcoEagleLogo" width="795" height="795"/>
+        <image name="Group 10" width="1056" height="2277"/>
         <image name="Lights" width="274" height="177"/>
         <image name="MattressEdited-2" width="111" height="460"/>
         <image name="PileOfClothes" width="65" height="97"/>
